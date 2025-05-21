@@ -9,8 +9,7 @@ import "react-native-reanimated";
 
 import { useColorScheme } from "@/hooks/useColorScheme";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
-import AnimatedGradient from "./components/AnimatedGradient";
-import FrostedCard from "./components/FrostedCard";
+import AnimatedViewBox from "./components/AnimatedViewBox";
 
 export default function RootLayout() {
   const colorScheme = useColorScheme();
@@ -26,8 +25,7 @@ export default function RootLayout() {
   return (
     <ThemeProvider value={colorScheme === "dark" ? DarkTheme : DefaultTheme}>
       <GestureHandlerRootView>
-        <FrostedCard />
-        <AnimatedGradient />
+        <AnimatedViewBox />
       </GestureHandlerRootView>
       <StatusBar style="auto" />
     </ThemeProvider>
