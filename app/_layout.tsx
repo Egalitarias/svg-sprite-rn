@@ -8,7 +8,7 @@ import { StatusBar } from "expo-status-bar";
 import "react-native-reanimated";
 
 import { useColorScheme } from "@/hooks/useColorScheme";
-import AnimatedSpriteSheet from "./components/AnimatedSpriteSheet";
+import AnimatedCircleSquareSvg from "./components/AnimatedCircleSquareSvg";
 import AnimatedSpriteSheetSvg from "./components/AnimatedSpriteSheetSvg";
 import CircleSquareIconSvg from "./components/CircleSquareIconSvg";
 
@@ -25,8 +25,8 @@ export default function RootLayout() {
 
   return (
     <ThemeProvider value={colorScheme === "dark" ? DarkTheme : DefaultTheme}>
-      <AnimatedSpriteSheet />
       <AnimatedSpriteSheetSvg />
+      <AnimatedCircleSquareSvg />
       <CircleSquareIconSvg />
       <StatusBar style="auto" />
     </ThemeProvider>
