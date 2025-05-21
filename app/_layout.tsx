@@ -8,7 +8,8 @@ import { StatusBar } from "expo-status-bar";
 import "react-native-reanimated";
 
 import { useColorScheme } from "@/hooks/useColorScheme";
-import AnimaitedThreeCirclesSvg from "./components/AnimaitedThreeCirclesSvg";
+import { GestureHandlerRootView } from "react-native-gesture-handler";
+import FrostedCard from "./components/FrostedCard";
 
 export default function RootLayout() {
   const colorScheme = useColorScheme();
@@ -23,7 +24,9 @@ export default function RootLayout() {
 
   return (
     <ThemeProvider value={colorScheme === "dark" ? DarkTheme : DefaultTheme}>
-      <AnimaitedThreeCirclesSvg />
+      <GestureHandlerRootView>
+        <FrostedCard />
+      </GestureHandlerRootView>
       <StatusBar style="auto" />
     </ThemeProvider>
   );
