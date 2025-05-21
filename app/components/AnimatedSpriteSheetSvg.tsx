@@ -8,7 +8,7 @@ import {
 import { useEffect } from "react";
 import { useSharedValue } from "react-native-reanimated";
 
-const AnimatedSpriteSheet = () => {
+const AnimatedSpriteSheetSvg = () => {
   const counter = useSharedValue(0);
   useEffect(() => {
     const interval = setInterval(() => {
@@ -19,7 +19,7 @@ const AnimatedSpriteSheet = () => {
   }, []);
 
   const spriteMap = useImage(
-    require("../../assets/images/animation/sprite-sheet.webp")
+    require("../../assets/images/animation/sprite-sheet.svg")
   );
 
   const numberOfSprites = 1;
@@ -43,4 +43,4 @@ const AnimatedSpriteSheet = () => {
   );
 };
 
-export default AnimatedSpriteSheet;
+export default AnimatedSpriteSheetSvg;

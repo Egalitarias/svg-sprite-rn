@@ -9,6 +9,7 @@ import "react-native-reanimated";
 
 import { useColorScheme } from "@/hooks/useColorScheme";
 import AnimatedSpriteSheet from "./components/AnimatedSpriteSheet";
+import AnimatedSpriteSheetSvg from "./components/AnimatedSpriteSheetSvg";
 
 export default function RootLayout() {
   const colorScheme = useColorScheme();
@@ -24,6 +25,7 @@ export default function RootLayout() {
   return (
     <ThemeProvider value={colorScheme === "dark" ? DarkTheme : DefaultTheme}>
       <AnimatedSpriteSheet />
+      <AnimatedSpriteSheetSvg />
       <StatusBar style="auto" />
     </ThemeProvider>
   );
