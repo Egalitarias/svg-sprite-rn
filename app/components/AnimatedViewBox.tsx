@@ -11,14 +11,13 @@ const AnimatedViewBox = (props): ReactElement => {
       const frame = `${left} ${right} 20 20`;
       console.log(frame);
       //frames.push(frame);
-      frames.push("10 10 90 90");
-      frames.push("10 10 90 90");
-      frames.push("10 10 90 90");
-      frames.push("0 10 80 90");
-      frames.push("0 10 80 90");
-      frames.push("0 10 80 90");
-      frames.push("0 10 80 90");
-      frames.push("0 10 80 90");
+      frames.push("40 40 20 20");
+      frames.push("40 40 20 20");
+      frames.push("40 40 20 20");
+      frames.push("40 40 20 20");
+      frames.push("40 40 20 20");
+      frames.push("40 40 20 20");
+      frames.push("40 40 20 20");
     }
 
     return frames;
@@ -59,7 +58,7 @@ const AnimatedViewBox = (props): ReactElement => {
       xmlns="http://www.w3.org/2000/svg"
     >
       <Rect x="0" y="0" width="100%" height="100%" />
-      <Circle cx="50%" cy="50%" r="4" fill="white" />
+      <Circle cx="50%" cy="50%" r="20" fill="white" />
     </Svg>
   );
 };
