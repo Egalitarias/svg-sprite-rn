@@ -11,6 +11,7 @@ const AnimatedViewBox = (props): ReactElement => {
       const frame = `${left} ${right} 20 20`;
       console.log(frame);
       //frames.push(frame);
+      /*
       frames.push("40 40 20 20");
       frames.push("40 40 20 20");
       frames.push("40 40 20 20");
@@ -18,6 +19,14 @@ const AnimatedViewBox = (props): ReactElement => {
       frames.push("40 40 20 20");
       frames.push("40 40 20 20");
       frames.push("40 40 20 20");
+      */
+      frames.push("0 0 100 100");
+      frames.push("1 1 99 99");
+      frames.push("2 2 98 98");
+      frames.push("3 3 97 97");
+      frames.push("4 4 96 96");
+      frames.push("5 5 95 95");
+      frames.push("6 6 94 94");
     }
 
     return frames;
@@ -44,7 +53,7 @@ const AnimatedViewBox = (props): ReactElement => {
       if (frameIndex >= frames.length - 2) {
         clearInterval(intervaleTimer);
       }
-    }, 1000);
+    }, 50);
 
     return () => {
       clearInterval(intervaleTimer);
